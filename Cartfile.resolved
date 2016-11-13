@@ -1,2 +1,4 @@
+github "xmartlabs/Eureka" "2.0.0-beta.1"
 github "onevcat/Kingfisher" "3.2.0"
+github "ortuman/SwiftForms" "1.7"
 github "NIFTYCloud-mbaas/ncmb_ios" "v2.3.3"

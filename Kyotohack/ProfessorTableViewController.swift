@@ -9,21 +9,22 @@
 import UIKit
 import NCMB
 import Kingfisher
+
 class Professor_enable_TableViewController: UITableViewController {
 
     var professor:[Professor] = []
     var pro:Professor!
-
+    let app = UIApplication.shared.delegate as! AppDelegate
     var name:[String] = []
     var imageurl:[String] = []
     var roomname:[String] = []
+    var oid:[String] = []
 
 
-    override func viewDidLoad() {
-
-        super.viewDidLoad()
-
+    func refresh()
+    {
         let obj = NCMBQuery(className: "Professor")
+        obj?.whereKey("presence", equalTo: true)
         obj?.findObjectsInBackground({(objects , error) in
             if (error == nil) {
                 if((objects?.count)! > 0)
@@ -33,6 +34,38 @@ class Professor_enable_TableViewController: UITableViewController {
                         self.name.append(ob.object(forKey: "name") as! String!)
                         self.imageurl.append(ob.object(forKey: "imageUrl") as! String!)
                         self.roomname.append(ob.object(forKey: "room") as! String!)
+                        self.oid.append(ob.objectId)
+                    }
+
+                }
+            } else {
+
+            }
+            
+        })
+
+    }
+
+    override func viewDidLoad() {
+
+        super.viewDidLoad()
+
+
+       
+
+
+        let obj = NCMBQuery(className: "Professor")
+        obj?.whereKey("presence", equalTo: true)
+        obj?.findObjectsInBackground({(objects , error) in
+            if (error == nil) {
+                if((objects?.count)! > 0)
+                {
+                    for ob in (objects! as? [NCMBObject])! {
+                        print(ob)
+                        self.name.append(ob.object(forKey: "name") as! String!)
+                        self.imageurl.append(ob.object(forKey: "imageUrl") as! String!)
+                        self.roomname.append(ob.object(forKey: "room") as! String!)
+                        self.oid.append(ob.objectId)
                     }
 
                 }
@@ -45,6 +78,32 @@ class Professor_enable_TableViewController: UITableViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
+        self.name
+        self.imageurl.append(ob.object(forKey: "imageUrl") as! String!)
+        self.roomname.append(ob.object(forKey: "room") as! String!)
+        self.oid.append(ob.objectId)
+
+
+        let obj = NCMBQuery(className: "Professor")
+        obj?.whereKey("presence", equalTo: true)
+        obj?.findObjectsInBackground({(objects , error) in
+            if (error == nil) {
+                if((objects?.count)! > 0)
+                {
+                    for ob in (objects! as? [NCMBObject])! {
+                        print(ob)
+                        self.name.append(ob.object(forKey: "name") as! String!)
+                        self.imageurl.append(ob.object(forKey: "imageUrl") as! String!)
+                        self.roomname.append(ob.object(forKey: "room") as! String!)
+                        self.oid.append(ob.objectId)
+                    }
+
+                }
+            } else {
+
+            }
+            
+        })
         self.tableView.reloadData()
     }
 
@@ -78,6 +137,15 @@ class Professor_enable_TableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath:IndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        app.oid = self.oid[indexPath.row]
+
+        let nex = self.storyboard!.instantiateViewController(withIdentifier: "form")
+        self.present(nex , animated: true, completion: nil)
+
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.

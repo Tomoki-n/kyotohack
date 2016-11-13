@@ -8,6 +8,7 @@
 
 import UIKit
 import NCMB
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,11 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let NCMB_CLIANT_KEY = "f920554fb554413e5874cbc48be8555d3b8b3a0f07ba22b9882dff4c76b1a6f8"
 
 
-
+    var oid = ""
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+            // Enable or disable features based on authorization.
+        }
         NCMB.setApplicationKey(NCMB_APP_KEY, clientKey: NCMB_CLIANT_KEY)
 
         return true

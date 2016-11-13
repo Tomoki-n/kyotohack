@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import NCMB
+import UserNotifications
 
 class ViewController: UIViewController,CLLocationManagerDelegate {
 
@@ -34,6 +35,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         self.locationManerger.delegate = self
         self.locationManerger.requestWhenInUseAuthorization()
         self.locationManerger.startRangingBeacons(in: self.myRegion)
+
+
         // Do any additional setup after loading the view, typically from a nib.
 
 
@@ -51,6 +54,22 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
 
             }
         })
+
+
+        let obj1 = NCMBQuery(className: "Appointment")
+        obj1?.findObjectsInBackground({(objects , error) in
+            if (error == nil) {
+                if((objects?.count)! > 0)
+                {
+                    self.b_count = (objects?.count)!
+
+
+                }
+            } else {
+
+            }
+            
+        })
     }
 
 
@@ -62,6 +81,9 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         self.locationManerger.startRangingBeacons(in: self.myRegion)
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+        }
 
     }
 
@@ -86,44 +108,40 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
 
-        if beacons.count == 0 {
+        
+         let obj = NCMBQuery(className: "Appointment1")
+        obj?.findObjectsInBackground({(objects , error) in
+            if (error == nil) {
+                if((objects?.count)! > self.b_count)
+                {
 
-            let obj1 = NCMBObject(className: "Professor")
-            obj1?.objectId = "e6R22IS181UOMhx2"
-            // 値を設定
-            obj1?.setObject(false, forKey: "presence")
-            // 保存を実施
-            obj1?.saveInBackground({(error) in
-                if (error != nil) {
-                    // 保存に失敗した場合の処理
-                }else{
-                    // 保存に成功した場合の処理
+                    let content = UNMutableNotificationContent()
+
+                    content.title = "確認"
+                    content.body = "井佐原 均から承認されました。"
+                    content.sound = UNNotificationSound.default()
+
+                    // Deliver the notification in five seconds.
+                    let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 5, repeats: false)
+                    let request = UNNotificationRequest.init(identifier: "FiveSecond", content: content, trigger: trigger)
+
+                    // Schedule the notification.
+                    let center = UNUserNotificationCenter.current()
+                    center.add(request) { (error) in
+                        print(error)
+                    }
+                    print("should have been added")
+
                 }
-            })
+            } else {
 
-
-        }else{
-            let obj1 = NCMBObject(className: "Professor")
-            obj1?.objectId = "e6R22IS181UOMhx2"
-            // 値を設定
-            obj1?.setObject(true, forKey: "presence")
-            // 保存を実施
-            obj1?.saveInBackground({(error) in
-                if (error != nil) {
-                    // 保存に失敗した場合の処理
-                }else{
-                    // 保存に成功した場合の処理
-                }
-            })
-
-        }
+            }
+            
+        })
 
 
 
     }
-
-
-
 
 
     func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

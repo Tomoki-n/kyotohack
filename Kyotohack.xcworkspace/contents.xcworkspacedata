@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Asssets.xcassets">
+   </FileRef>
+   <FileRef
       location = "group:Kyotohack.xcodeproj">
    </FileRef>
    <FileRef

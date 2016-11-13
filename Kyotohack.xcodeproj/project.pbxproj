@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C0FE0D85F3AF3343B6C38B80 /* Pods_Kyotohack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EDF7CFD5CE881D0C5A6653 /* Pods_Kyotohack.framework */; };
+		FA34F9BF1DD8414A00882583 /* AddFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34F9BE1DD8414A00882583 /* AddFormsViewController.swift */; };
+		FA34F9C31DD8440500882583 /* Professor_unenable_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34F9C21DD8440500882583 /* Professor_unenable_TableViewController.swift */; };
+		FA34F9C51DD85AE900882583 /* Asssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA34F9C41DD85AE900882583 /* Asssets.xcassets */; };
+		FA688B7E1DD8355A00C64EAD /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA688B7D1DD8355A00C64EAD /* FormViewController.swift */; };
+		FA688B821DD837BB00C64EAD /* SwiftForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA688B811DD837BB00C64EAD /* SwiftForms.framework */; };
 		FAD52A901DD7F23D009F5674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD52A8F1DD7F23D009F5674 /* AppDelegate.swift */; };
 		FAD52A921DD7F23D009F5674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD52A911DD7F23D009F5674 /* ViewController.swift */; };
 		FAD52A951DD7F23D009F5674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD52A931DD7F23D009F5674 /* Main.storyboard */; };
-		FAD52A971DD7F23D009F5674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD52A961DD7F23D009F5674 /* Assets.xcassets */; };
 		FAD52A9A1DD7F23D009F5674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD52A981DD7F23D009F5674 /* LaunchScreen.storyboard */; };
 		FAD52AA61DD802F8009F5674 /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD52AA41DD802F8009F5674 /* NCMB.framework */; };
 		FAD52AAD1DD81AF8009F5674 /* ProfessorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD52AAC1DD81AF7009F5674 /* ProfessorTableViewCell.swift */; };
@@ -24,11 +28,17 @@
 		0BFD0CABD6540FDE30D3A70C /* Pods-Kyotohack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kyotohack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kyotohack/Pods-Kyotohack.debug.xcconfig"; sourceTree = "<group>"; };
 		A0EDF7CFD5CE881D0C5A6653 /* Pods_Kyotohack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kyotohack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88570EF4F86A3C1EB888DD2 /* Pods-Kyotohack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kyotohack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kyotohack/Pods-Kyotohack.release.xcconfig"; sourceTree = "<group>"; };
+		FA34F9BE1DD8414A00882583 /* AddFormsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFormsViewController.swift; sourceTree = "<group>"; };
+		FA34F9C21DD8440500882583 /* Professor_unenable_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Professor_unenable_TableViewController.swift; sourceTree = "<group>"; };
+		FA34F9C41DD85AE900882583 /* Asssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Asssets.xcassets; path = ../Asssets.xcassets; sourceTree = SOURCE_ROOT; };
+		FA34F9C61DD8600200882583 /* Kyotohack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kyotohack.entitlements; sourceTree = "<group>"; };
+		FA688B7D1DD8355A00C64EAD /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		FA688B7F1DD8358000C64EAD /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		FA688B811DD837BB00C64EAD /* SwiftForms.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftForms.framework; path = Carthage/Build/iOS/SwiftForms.framework; sourceTree = "<group>"; };
 		FAD52A8C1DD7F23D009F5674 /* Kyotohack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kyotohack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD52A8F1DD7F23D009F5674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD52A911DD7F23D009F5674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAD52A941DD7F23D009F5674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FAD52A961DD7F23D009F5674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD52A991DD7F23D009F5674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD52A9B1DD7F23D009F5674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD52AA41DD802F8009F5674 /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NCMB.framework; path = Carthage/Build/iOS/NCMB.framework; sourceTree = "<group>"; };
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA688B821DD837BB00C64EAD /* SwiftForms.framework in Frameworks */,
 				FAD52AB21DD8240E009F5674 /* Kingfisher.framework in Frameworks */,
 				FAD52AA61DD802F8009F5674 /* NCMB.framework in Frameworks */,
 				C0FE0D85F3AF3343B6C38B80 /* Pods_Kyotohack.framework in Frameworks */,
@@ -82,13 +93,17 @@
 		FAD52A8E1DD7F23D009F5674 /* Kyotohack */ = {
 			isa = PBXGroup;
 			children = (
+				FA34F9C61DD8600200882583 /* Kyotohack.entitlements */,
 				FAD52A8F1DD7F23D009F5674 /* AppDelegate.swift */,
 				FAD52A911DD7F23D009F5674 /* ViewController.swift */,
 				FAD52A931DD7F23D009F5674 /* Main.storyboard */,
+				FA34F9C41DD85AE900882583 /* Asssets.xcassets */,
+				FA688B7D1DD8355A00C64EAD /* FormViewController.swift */,
+				FA34F9BE1DD8414A00882583 /* AddFormsViewController.swift */,
 				FAD52AB01DD81D21009F5674 /* Professor.swift */,
 				FAD52AAC1DD81AF7009F5674 /* ProfessorTableViewCell.swift */,
 				FAD52AAE1DD81BBF009F5674 /* ProfessorTableViewController.swift */,
-				FAD52A961DD7F23D009F5674 /* Assets.xcassets */,
+				FA34F9C21DD8440500882583 /* Professor_unenable_TableViewController.swift */,
 				FAD52A981DD7F23D009F5674 /* LaunchScreen.storyboard */,
 				FAD52A9B1DD7F23D009F5674 /* Info.plist */,
 			);
@@ -98,6 +113,8 @@
 		FAD52AA31DD802F8009F5674 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA688B811DD837BB00C64EAD /* SwiftForms.framework */,
+				FA688B7F1DD8358000C64EAD /* Eureka.framework */,
 				FAD52AA41DD802F8009F5674 /* NCMB.framework */,
 				FAD52AA51DD802F8009F5674 /* Kingfisher.framework */,
 				A0EDF7CFD5CE881D0C5A6653 /* Pods_Kyotohack.framework */,
@@ -143,6 +160,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 8589MH68KB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -170,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD52A9A1DD7F23D009F5674 /* LaunchScreen.storyboard in Resources */,
-				FAD52A971DD7F23D009F5674 /* Assets.xcassets in Resources */,
+				FA34F9C51DD85AE900882583 /* Asssets.xcassets in Resources */,
 				FAD52A951DD7F23D009F5674 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +253,7 @@
 			inputPaths = (
 				"$(SRCROOT)//Carthage/Build/iOS/NCMB.framework",
 				"$(SRCROOT)//Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)//Carthage/Build/iOS/SwiftForms.framework",
 			);
 			outputPaths = (
 			);
@@ -245,6 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA34F9BF1DD8414A00882583 /* AddFormsViewController.swift in Sources */,
+				FA34F9C31DD8440500882583 /* Professor_unenable_TableViewController.swift in Sources */,
+				FA688B7E1DD8355A00C64EAD /* FormViewController.swift in Sources */,
 				FAD52AB11DD81D21009F5674 /* Professor.swift in Sources */,
 				FAD52AAF1DD81BBF009F5674 /* ProfessorTableViewController.swift in Sources */,
 				FAD52AAD1DD81AF8009F5674 /* ProfessorTableViewCell.swift in Sources */,
@@ -371,6 +397,7 @@
 			baseConfigurationReference = 0BFD0CABD6540FDE30D3A70C /* Pods-Kyotohack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kyotohack/Kyotohack.entitlements;
 				DEVELOPMENT_TEAM = 8589MH68KB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,6 +416,7 @@
 			baseConfigurationReference = E88570EF4F86A3C1EB888DD2 /* Pods-Kyotohack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kyotohack/Kyotohack.entitlements;
 				DEVELOPMENT_TEAM = 8589MH68KB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
