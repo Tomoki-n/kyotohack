@@ -12,6 +12,6 @@ $ brew install swiftlint
 
 # Install libralies
 $ pod install
-$ carthage bootstrap --platform iOS
+$ carthage update --platform iOS
 ```
 
