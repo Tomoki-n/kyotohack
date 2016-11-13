@@ -17,7 +17,7 @@ class ProfessorTableViewCell: UITableViewCell {
 
     @IBOutlet weak var images: UIImageView!
     @IBOutlet weak var name: UILabel!
-
+    @IBOutlet weak var room: UILabel!
 
 
     override func setSelected(_ selected: Bool, animated: Bool) {

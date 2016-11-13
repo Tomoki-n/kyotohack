@@ -61,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="882" y="-99"/>
         </scene>
-        <!--Professor enable Table View Controller-->
+        <!--訪問NG-->
         <scene sceneID="XLf-W4-gSB">
             <objects>
                 <tableViewController id="y9H-yI-CeI" customClass="Professor_enable_TableViewController" customModule="Kyotohack" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,7 +82,14 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrU-cz-6Fa">
-                                            <rect key="frame" x="182" y="52" width="42" height="21"/>
+                                            <rect key="frame" x="133" y="28" width="327" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcg-oK-gpK">
+                                            <rect key="frame" x="133" y="74" width="327" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -93,6 +100,7 @@
                                 <connections>
                                     <outlet property="images" destination="cfM-b1-ipO" id="Oh4-hu-hu4"/>
                                     <outlet property="name" destination="ZrU-cz-6Fa" id="Wij-Oc-eUz"/>
+                                    <outlet property="room" destination="tcg-oK-gpK" id="lOr-a5-lqR"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -101,11 +109,11 @@
                             <outlet property="delegate" destination="y9H-yI-CeI" id="agM-C2-zHx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Vkp-5x-YdI"/>
+                    <navigationItem key="navigationItem" title="訪問NG" id="Vkp-5x-YdI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eda-0B-oqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2018" y="-99"/>
+            <point key="canvasLocation" x="2016.8" y="-99.400299850074973"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="D2k-6M-2K8">

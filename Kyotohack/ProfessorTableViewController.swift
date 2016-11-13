@@ -72,6 +72,7 @@ class Professor_enable_TableViewController: UITableViewController {
          let cell:ProfessorTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ProfessorTableViewCell
         cell.images.kf.setImage(with: URL(string: imageurl[indexPath.row]))
         cell.name.text = name[indexPath.row]
+        cell.room.text = roomname[indexPath.row]
         // Configure the cell...
 
         return cell
