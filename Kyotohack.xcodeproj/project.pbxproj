@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C0FE0D85F3AF3343B6C38B80 /* Pods_Kyotohack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EDF7CFD5CE881D0C5A6653 /* Pods_Kyotohack.framework */; };
+		C9FEA5AC1DD852C00045CE97 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FEA5AB1DD852C00045CE97 /* TableViewCell.swift */; };
 		FAD52A901DD7F23D009F5674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD52A8F1DD7F23D009F5674 /* AppDelegate.swift */; };
 		FAD52A921DD7F23D009F5674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD52A911DD7F23D009F5674 /* ViewController.swift */; };
 		FAD52A951DD7F23D009F5674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD52A931DD7F23D009F5674 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		0BFD0CABD6540FDE30D3A70C /* Pods-Kyotohack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kyotohack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kyotohack/Pods-Kyotohack.debug.xcconfig"; sourceTree = "<group>"; };
 		A0EDF7CFD5CE881D0C5A6653 /* Pods_Kyotohack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kyotohack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FEA5AB1DD852C00045CE97 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		E88570EF4F86A3C1EB888DD2 /* Pods-Kyotohack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kyotohack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kyotohack/Pods-Kyotohack.release.xcconfig"; sourceTree = "<group>"; };
 		FAD52A8C1DD7F23D009F5674 /* Kyotohack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kyotohack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD52A8F1DD7F23D009F5674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				FAD52A8F1DD7F23D009F5674 /* AppDelegate.swift */,
 				FAD52A911DD7F23D009F5674 /* ViewController.swift */,
 				FAD52A931DD7F23D009F5674 /* Main.storyboard */,
+				C9FEA5AB1DD852C00045CE97 /* TableViewCell.swift */,
 				FAD52AB01DD81D21009F5674 /* Professor.swift */,
 				FAD52AAC1DD81AF7009F5674 /* ProfessorTableViewCell.swift */,
 				FAD52AAE1DD81BBF009F5674 /* ProfessorTableViewController.swift */,
@@ -248,6 +251,7 @@
 				FAD52AB11DD81D21009F5674 /* Professor.swift in Sources */,
 				FAD52AAF1DD81BBF009F5674 /* ProfessorTableViewController.swift in Sources */,
 				FAD52AAD1DD81AF8009F5674 /* ProfessorTableViewCell.swift in Sources */,
+				C9FEA5AC1DD852C00045CE97 /* TableViewCell.swift in Sources */,
 				FAD52A921DD7F23D009F5674 /* ViewController.swift in Sources */,
 				FAD52A901DD7F23D009F5674 /* AppDelegate.swift in Sources */,
 			);
@@ -377,6 +381,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Kyotohack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.idev13.Kyotohack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +400,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Kyotohack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.idev13.Kyotohack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
