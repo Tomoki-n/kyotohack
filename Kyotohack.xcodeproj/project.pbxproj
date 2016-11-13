@@ -12,6 +12,7 @@
 		FAD52A951DD7F23D009F5674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD52A931DD7F23D009F5674 /* Main.storyboard */; };
 		FAD52A971DD7F23D009F5674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD52A961DD7F23D009F5674 /* Assets.xcassets */; };
 		FAD52A9A1DD7F23D009F5674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD52A981DD7F23D009F5674 /* LaunchScreen.storyboard */; };
+		FAD52AA61DD802F8009F5674 /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD52AA41DD802F8009F5674 /* NCMB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		FAD52A961DD7F23D009F5674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD52A991DD7F23D009F5674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD52A9B1DD7F23D009F5674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD52AA41DD802F8009F5674 /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NCMB.framework; path = Carthage/Build/iOS/NCMB.framework; sourceTree = "<group>"; };
+		FAD52AA51DD802F8009F5674 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD52AA61DD802F8009F5674 /* NCMB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +44,7 @@
 			children = (
 				FAD52A8E1DD7F23D009F5674 /* Kyotohack */,
 				FAD52A8D1DD7F23D009F5674 /* Products */,
+				FAD52AA31DD802F8009F5674 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +69,15 @@
 			path = Kyotohack;
 			sourceTree = "<group>";
 		};
+		FAD52AA31DD802F8009F5674 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAD52AA41DD802F8009F5674 /* NCMB.framework */,
+				FAD52AA51DD802F8009F5674 /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +88,7 @@
 				FAD52A881DD7F23D009F5674 /* Sources */,
 				FAD52A891DD7F23D009F5674 /* Frameworks */,
 				FAD52A8A1DD7F23D009F5674 /* Resources */,
+				FAD52AA21DD8027B009F5674 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +146,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FAD52AA21DD8027B009F5674 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)//Carthage/Build/iOS/NCMB.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAD52A881DD7F23D009F5674 /* Sources */ = {
@@ -260,6 +292,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8589MH68KB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Kyotohack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.idev13.Kyotohack;
@@ -273,6 +309,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8589MH68KB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Kyotohack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.idev13.Kyotohack;
@@ -300,6 +340,7 @@
 				FAD52AA01DD7F23D009F5674 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
