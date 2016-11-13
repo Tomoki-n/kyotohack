@@ -37,38 +37,20 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
 
 
-        let obj = NCMBQuery(className: "professor")
-        obj?.whereKey("name", equalTo: "田島孝治")
+        let obj = NCMBQuery(className: "Professor")
+        obj?.whereKey("busy", equalTo: true)
         obj?.findObjectsInBackground({(objects, error) in
             if (error == nil) {
                 if((objects?.count)! > 0)
                 {
                     let ob = objects!.first as! NCMBObject
                     self.oid = ob.objectId!
-                    print(ob)
-
+                    print(objects!)
                 }
             } else {
 
             }
-
-
         })
-
-
-        let obj1 = NCMBObject(className: "TestClass")
-        // 値を設定
-        obj1?.setObject("Hello,NCMB!", forKey: "message")
-        // 保存を実施
-        obj1?.saveInBackground({(error) in
-        if (error != nil) {
-                // 保存に失敗した場合の処理
-        }else{
-                // 保存に成功した場合の処理
-
-        }
-        })
-
     }
 
 
@@ -104,7 +86,39 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
 
-            print(beacons)
+        if beacons.count == 0 {
+
+            let obj1 = NCMBObject(className: "Professor")
+            obj1?.objectId = "e6R22IS181UOMhx2"
+            // 値を設定
+            obj1?.setObject(false, forKey: "presence")
+            // 保存を実施
+            obj1?.saveInBackground({(error) in
+                if (error != nil) {
+                    // 保存に失敗した場合の処理
+                }else{
+                    // 保存に成功した場合の処理
+                }
+            })
+
+
+        }else{
+            let obj1 = NCMBObject(className: "Professor")
+            obj1?.objectId = "e6R22IS181UOMhx2"
+            // 値を設定
+            obj1?.setObject(true, forKey: "presence")
+            // 保存を実施
+            obj1?.saveInBackground({(error) in
+                if (error != nil) {
+                    // 保存に失敗した場合の処理
+                }else{
+                    // 保存に成功した場合の処理
+                }
+            })
+
+        }
+
+
 
     }
 

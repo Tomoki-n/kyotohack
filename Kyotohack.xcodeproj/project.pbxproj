@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0FE0D85F3AF3343B6C38B80 /* Pods_Kyotohack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EDF7CFD5CE881D0C5A6653 /* Pods_Kyotohack.framework */; };
 		FAD52A901DD7F23D009F5674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD52A8F1DD7F23D009F5674 /* AppDelegate.swift */; };
 		FAD52A921DD7F23D009F5674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD52A911DD7F23D009F5674 /* ViewController.swift */; };
 		FAD52A951DD7F23D009F5674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD52A931DD7F23D009F5674 /* Main.storyboard */; };
 		FAD52A971DD7F23D009F5674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD52A961DD7F23D009F5674 /* Assets.xcassets */; };
 		FAD52A9A1DD7F23D009F5674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD52A981DD7F23D009F5674 /* LaunchScreen.storyboard */; };
 		FAD52AA61DD802F8009F5674 /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD52AA41DD802F8009F5674 /* NCMB.framework */; };
+		FAD52AAD1DD81AF8009F5674 /* ProfessorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD52AAC1DD81AF7009F5674 /* ProfessorTableViewCell.swift */; };
+		FAD52AAF1DD81BBF009F5674 /* ProfessorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD52AAE1DD81BBF009F5674 /* ProfessorTableViewController.swift */; };
+		FAD52AB11DD81D21009F5674 /* Professor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD52AB01DD81D21009F5674 /* Professor.swift */; };
+		FAD52AB21DD8240E009F5674 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD52AA51DD802F8009F5674 /* Kingfisher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BFD0CABD6540FDE30D3A70C /* Pods-Kyotohack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kyotohack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kyotohack/Pods-Kyotohack.debug.xcconfig"; sourceTree = "<group>"; };
+		A0EDF7CFD5CE881D0C5A6653 /* Pods_Kyotohack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kyotohack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88570EF4F86A3C1EB888DD2 /* Pods-Kyotohack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kyotohack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kyotohack/Pods-Kyotohack.release.xcconfig"; sourceTree = "<group>"; };
 		FAD52A8C1DD7F23D009F5674 /* Kyotohack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kyotohack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD52A8F1DD7F23D009F5674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD52A911DD7F23D009F5674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +33,9 @@
 		FAD52A9B1DD7F23D009F5674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD52AA41DD802F8009F5674 /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NCMB.framework; path = Carthage/Build/iOS/NCMB.framework; sourceTree = "<group>"; };
 		FAD52AA51DD802F8009F5674 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		FAD52AAC1DD81AF7009F5674 /* ProfessorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessorTableViewCell.swift; sourceTree = "<group>"; };
+		FAD52AAE1DD81BBF009F5674 /* ProfessorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessorTableViewController.swift; sourceTree = "<group>"; };
+		FAD52AB01DD81D21009F5674 /* Professor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Professor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,19 +43,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD52AB21DD8240E009F5674 /* Kingfisher.framework in Frameworks */,
 				FAD52AA61DD802F8009F5674 /* NCMB.framework in Frameworks */,
+				C0FE0D85F3AF3343B6C38B80 /* Pods_Kyotohack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA5995256A47067DA8B9713D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD0CABD6540FDE30D3A70C /* Pods-Kyotohack.debug.xcconfig */,
+				E88570EF4F86A3C1EB888DD2 /* Pods-Kyotohack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAD52A831DD7F23D009F5674 = {
 			isa = PBXGroup;
 			children = (
 				FAD52A8E1DD7F23D009F5674 /* Kyotohack */,
 				FAD52A8D1DD7F23D009F5674 /* Products */,
 				FAD52AA31DD802F8009F5674 /* Frameworks */,
+				AA5995256A47067DA8B9713D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +85,9 @@
 				FAD52A8F1DD7F23D009F5674 /* AppDelegate.swift */,
 				FAD52A911DD7F23D009F5674 /* ViewController.swift */,
 				FAD52A931DD7F23D009F5674 /* Main.storyboard */,
+				FAD52AB01DD81D21009F5674 /* Professor.swift */,
+				FAD52AAC1DD81AF7009F5674 /* ProfessorTableViewCell.swift */,
+				FAD52AAE1DD81BBF009F5674 /* ProfessorTableViewController.swift */,
 				FAD52A961DD7F23D009F5674 /* Assets.xcassets */,
 				FAD52A981DD7F23D009F5674 /* LaunchScreen.storyboard */,
 				FAD52A9B1DD7F23D009F5674 /* Info.plist */,
@@ -74,6 +100,7 @@
 			children = (
 				FAD52AA41DD802F8009F5674 /* NCMB.framework */,
 				FAD52AA51DD802F8009F5674 /* Kingfisher.framework */,
+				A0EDF7CFD5CE881D0C5A6653 /* Pods_Kyotohack.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,10 +112,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAD52A9E1DD7F23D009F5674 /* Build configuration list for PBXNativeTarget "Kyotohack" */;
 			buildPhases = (
+				528EF6DF1C70D88AE6E810AF /* [CP] Check Pods Manifest.lock */,
 				FAD52A881DD7F23D009F5674 /* Sources */,
 				FAD52A891DD7F23D009F5674 /* Frameworks */,
 				FAD52A8A1DD7F23D009F5674 /* Resources */,
 				FAD52AA21DD8027B009F5674 /* ShellScript */,
+				044903F0639DCD53E851C921 /* [CP] Embed Pods Frameworks */,
+				5191E20C9FE421787D2E137F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +178,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		044903F0639DCD53E851C921 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kyotohack/Pods-Kyotohack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5191E20C9FE421787D2E137F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kyotohack/Pods-Kyotohack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		528EF6DF1C70D88AE6E810AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		FAD52AA21DD8027B009F5674 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,6 +230,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)//Carthage/Build/iOS/NCMB.framework",
+				"$(SRCROOT)//Carthage/Build/iOS/Kingfisher.framework",
 			);
 			outputPaths = (
 			);
@@ -169,6 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD52AB11DD81D21009F5674 /* Professor.swift in Sources */,
+				FAD52AAF1DD81BBF009F5674 /* ProfessorTableViewController.swift in Sources */,
+				FAD52AAD1DD81AF8009F5674 /* ProfessorTableViewCell.swift in Sources */,
 				FAD52A921DD7F23D009F5674 /* ViewController.swift in Sources */,
 				FAD52A901DD7F23D009F5674 /* AppDelegate.swift in Sources */,
 			);
@@ -289,6 +368,7 @@
 		};
 		FAD52A9F1DD7F23D009F5674 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BFD0CABD6540FDE30D3A70C /* Pods-Kyotohack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8589MH68KB;
@@ -306,6 +386,7 @@
 		};
 		FAD52AA01DD7F23D009F5674 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E88570EF4F86A3C1EB888DD2 /* Pods-Kyotohack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8589MH68KB;
